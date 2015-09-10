@@ -37,8 +37,8 @@
 			<type label="SET" length="1" sql="SET" quote=""/>
 			<type label="Bit" length="0" sql="bit" quote=""/>
 		</group>
-	</datatypes><table x="69" y="13" name="AOBJ_ITEM">
-<row name="ID_ITEM" null="1" autoincrement="1">
+	</datatypes><table x="10" y="10" name="AOBJ_ITEM">
+<row name="pk_item" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="classname" null="0" autoincrement="0">
@@ -65,6 +65,9 @@
 <row name="side" null="1" autoincrement="0">
 <datatype>VARCHAR(250)</datatype>
 <default>NULL</default></row>
+<row name="highParent" null="1" autoincrement="0">
+<datatype>VARCHAR(80)</datatype>
+<default>NULL</default></row>
 <row name="type" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
@@ -74,6 +77,114 @@
 <row name="armour" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
+<row name="lastUpdate" null="1" autoincrement="0">
+<datatype>DATETIME</datatype>
+<default>NULL</default></row>
+<row name="radius2D" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="radius3D" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="width" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="height" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="length" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>pk_item</part>
+</key>
+</table>
+<table x="335" y="331" name="AOBJ_HIDDENSEL">
+<row name="pk_selection" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="selection" null="1" autoincrement="0">
+<datatype>VARCHAR(255)</datatype>
+<default>NULL</default></row>
+<row name="fk_item" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="pk_item" />
+</row>
+<key type="PRIMARY" name="">
+<part>pk_selection</part>
+</key>
+</table>
+<table x="333" y="589" name="AOBJ_WEAPONS">
+<row name="pk_weapon" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fk_item" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="pk_item" />
+</row>
+<row name="weaponClass" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+</row>
+<key type="PRIMARY" name="">
+<part>pk_weapon</part>
+</key>
+</table>
+<table x="335" y="445" name="AOBJ_MAGAZINES">
+<row name="pk_mags" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fk_item" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="pk_item" />
+</row>
+<row name="magClass" null="0" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>'NULL'</default></row>
+<row name="amount" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>0</default></row>
+<key type="PRIMARY" name="">
+<part>pk_mags</part>
+</key>
+</table>
+<table x="332" y="80" name="AOBJ_PARENTS">
+<row name="pk_parent" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fk_item" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="pk_item" />
+</row>
+<row name="parentClass" null="1" autoincrement="0">
+<datatype>VARCHAR(255)</datatype>
+<default>NULL</default></row>
+<row name="level" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>0</default></row>
+<key type="PRIMARY" name="">
+<part>pk_parent</part>
+</key>
+</table>
+<table x="334" y="217" name="AOBJ_LOGERR">
+<row name="pk_logerr" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fk_item" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="pk_item" />
+</row>
+<row name="errText" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT(2000)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>pk_logerr</part>
+</key>
+</table>
+<table x="675" y="15" name="AOBJ_ITEM_PLUS">
+<row name="pk_itemplus" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="pk_item" />
+</row>
 <row name="accuracy" null="1" autoincrement="0">
 <datatype>DECIMAL</datatype>
 <default>NULL</default></row>
@@ -84,7 +195,7 @@
 <datatype>DECIMAL</datatype>
 <default>NULL</default></row>
 <row name="transportSoldier" null="1" autoincrement="0">
-<datatype>SMALLINT</datatype>
+<datatype>MEDIUMINT</datatype>
 <default>NULL</default></row>
 <row name="maxLoad" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
@@ -98,7 +209,7 @@
 <row name="brakeDist" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="crew" null="1" autoincrement="0">
+<row name="crewClass" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="hasTracks" null="1" autoincrement="0">
@@ -129,85 +240,7 @@
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
-<part>ID_ITEM</part>
-</key>
-</table>
-<table x="349" y="14" name="AOBJ_HIDDENSEL">
-<row name="ID_SEL" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="T_NAME" null="1" autoincrement="0">
-<datatype>VARCHAR(255)</datatype>
-<default>NULL</default></row>
-<row name="FK_ITEM" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
-</row>
-<key type="PRIMARY" name="">
-<part>ID_SEL</part>
-</key>
-</table>
-<table x="353" y="290" name="AOBJ_WEAPONS">
-<row name="ID_WEAP" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="FK_ITEM" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
-</row>
-<row name="T_NAME" null="0" autoincrement="0">
-<datatype>VARCHAR</datatype>
-</row>
-<key type="PRIMARY" name="">
-<part>ID_WEAP</part>
-</key>
-</table>
-<table x="351" y="140" name="AOBJ_MAGAZINES">
-<row name="ID_MAGS" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="FK_ITEM" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
-</row>
-<row name="T_NAME" null="0" autoincrement="0">
-<datatype>VARCHAR(250)</datatype>
-<default>'NULL'</default></row>
-<row name="N_COUNT" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>0</default></row>
-<key type="PRIMARY" name="">
-<part>ID_MAGS</part>
-</key>
-</table>
-<table x="349" y="408" name="AOBJ_PARENTS">
-<row name="ID_PAR" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="FK_ITEM" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
-</row>
-<row name="T_PARENT" null="1" autoincrement="0">
-<datatype>VARCHAR(255)</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="">
-<part>ID_PAR</part>
-</key>
-</table>
-<table x="354" y="538" name="AOBJ_LOGERR">
-<row name="ID_LOGERR" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="FK_ITEM" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
-</row>
-<row name="ERR" null="1" autoincrement="0">
-<datatype>MEDIUMTEXT(2000)</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="">
-<part>ID_LOGERR</part>
+<part>pk_itemplus</part>
 </key>
 </table>
 </sql>
