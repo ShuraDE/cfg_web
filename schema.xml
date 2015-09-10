@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
+<!-- Active URL: http://ondras.zarovi.cz/sql/demo/ -->
+<sql>
+<datatypes db="mysql">
+		<group label="Numeric" color="rgb(238,238,170)">
+			<type label="Integer" length="0" sql="INTEGER" quote=""/>
+			<type label="TINYINT" length="0" sql="TINYINT" quote=""/>
+			<type label="SMALLINT" length="0" sql="SMALLINT" quote=""/>
+			<type label="MEDIUMINT" length="0" sql="MEDIUMINT" quote=""/>
+			<type label="INT" length="0" sql="INT" quote=""/>
+			<type label="BIGINT" length="0" sql="BIGINT" quote=""/>
+			<type label="Decimal" length="1" sql="DECIMAL" re="DEC" quote=""/>
+			<type label="Single precision" length="0" sql="FLOAT" quote=""/>
+			<type label="Double precision" length="0" sql="DOUBLE" re="DOUBLE" quote=""/>
+		</group>
+
+		<group label="Character" color="rgb(255,200,200)">
+			<type label="Char" length="1" sql="CHAR" quote="'"/>
+			<type label="Varchar" length="1" sql="VARCHAR" quote="'"/>
+			<type label="Text" length="0" sql="MEDIUMTEXT" re="TEXT" quote="'"/>
+			<type label="Binary" length="1" sql="BINARY" quote="'"/>
+			<type label="Varbinary" length="1" sql="VARBINARY" quote="'"/>
+			<type label="BLOB" length="0" sql="BLOB" re="BLOB" quote="'"/>
+		</group>
+
+		<group label="Date &amp; Time" color="rgb(200,255,200)">
+			<type label="Date" length="0" sql="DATE" quote="'"/>
+			<type label="Time" length="0" sql="TIME" quote="'"/>
+			<type label="Datetime" length="0" sql="DATETIME" quote="'"/>
+			<type label="Year" length="0" sql="YEAR" quote=""/>
+			<type label="Timestamp" length="0" sql="TIMESTAMP" quote="'"/>
+		</group>
+
+		<group label="Miscellaneous" color="rgb(200,200,255)">
+			<type label="ENUM" length="1" sql="ENUM" quote=""/>
+			<type label="SET" length="1" sql="SET" quote=""/>
+			<type label="Bit" length="0" sql="bit" quote=""/>
+		</group>
+	</datatypes><table x="69" y="13" name="AOBJ_ITEM">
+<row name="ID_ITEM" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="classname" null="0" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>'NULL'</default></row>
+<row name="displayname" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="createable" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>1</default></row>
+<row name="errors" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>0</default></row>
+<row name="modbase" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="author" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT</datatype>
+<default>NULL</default></row>
+<row name="faction" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="side" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="type" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="subtype" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="armour" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="accuracy" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="camouflage" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="audible" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="transportSoldier" null="1" autoincrement="0">
+<datatype>SMALLINT</datatype>
+<default>NULL</default></row>
+<row name="maxLoad" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fuelCapacity" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="maxSpeed" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="brakeDist" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="crew" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="hasTracks" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="wheelCount" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="cargoCoDriver" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="transMaxWeap" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="transMaxMag" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="transMaxBackpack" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="transAmmo" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="transFuel" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="transRepair" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>ID_ITEM</part>
+</key>
+</table>
+<table x="349" y="14" name="AOBJ_HIDDENSEL">
+<row name="ID_SEL" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="T_NAME" null="1" autoincrement="0">
+<datatype>VARCHAR(255)</datatype>
+<default>NULL</default></row>
+<row name="FK_ITEM" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
+</row>
+<key type="PRIMARY" name="">
+<part>ID_SEL</part>
+</key>
+</table>
+<table x="353" y="290" name="AOBJ_WEAPONS">
+<row name="ID_WEAP" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="FK_ITEM" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
+</row>
+<row name="T_NAME" null="0" autoincrement="0">
+<datatype>VARCHAR</datatype>
+</row>
+<key type="PRIMARY" name="">
+<part>ID_WEAP</part>
+</key>
+</table>
+<table x="351" y="140" name="AOBJ_MAGAZINES">
+<row name="ID_MAGS" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="FK_ITEM" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
+</row>
+<row name="T_NAME" null="0" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>'NULL'</default></row>
+<row name="N_COUNT" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>0</default></row>
+<key type="PRIMARY" name="">
+<part>ID_MAGS</part>
+</key>
+</table>
+<table x="349" y="408" name="AOBJ_PARENTS">
+<row name="ID_PAR" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="FK_ITEM" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
+</row>
+<row name="T_PARENT" null="1" autoincrement="0">
+<datatype>VARCHAR(255)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>ID_PAR</part>
+</key>
+</table>
+<table x="354" y="538" name="AOBJ_LOGERR">
+<row name="ID_LOGERR" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="FK_ITEM" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="AOBJ_ITEM" row="ID_ITEM" />
+</row>
+<row name="ERR" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT(2000)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>ID_LOGERR</part>
+</key>
+</table>
+</sql>
