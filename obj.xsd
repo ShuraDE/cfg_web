@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--W3C Schema erstellt mit XMLSpy v2013 rel. 2 sp2 (x64) (http://www.altova.com)-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="worldSizes">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="[0.260275,0.391013,2.20523]"/>
+				<xsd:enumeration value="[1.5,2,2]"/>
+				<xsd:enumeration value="[13.6567,13.6567,13.7767]"/>
+				<xsd:enumeration value="[4.1646,5.81942,7.04692]"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="weapons">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value=""/>
+				<xsd:enumeration value="rhs_weap_akm"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="vehicleClass">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="LOP_Men"/>
+				<xsd:enumeration value="Misc"/>
+				<xsd:enumeration value="Objects"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ttl">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportVehicleCount">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportSoldier">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportRepair">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportMaxWeapons">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportMaxMagazines">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportMaxBackpacks">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportFuel">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="transportAmmo">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="tracksSpeed">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="tf_hasLRradio">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="textSingular">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Building"/>
+				<xsd:enumeration value="infantry"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="string" type="xsd:string"/>
+	<xsd:element name="slingLoadCargoMemoryPoints">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="side">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="CIV"/>
+				<xsd:enumeration value="EAST"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="radius">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="[0.32216,1.14872]"/>
+				<xsd:enumeration value="[1.32004,2.31355]"/>
+				<xsd:enumeration value="[3.72994,5.131]"/>
+				<xsd:enumeration value="[9.72744,11.9252]"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="picture">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value=""/>
+				<xsd:enumeration value="pictureStaticObject"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="parents">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ParentHiraObject" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="parentClassHirachical">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Building"/>
+				<xsd:enumeration value="Man"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="parent">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="bin\config.bin/CfgVehicles/JeepWreck1"/>
+				<xsd:enumeration value="bin\config.bin/CfgVehicles/NonStrategic"/>
+				<xsd:enumeration value="bin\config.bin/CfgVehicles/Strategic"/>
+				<xsd:enumeration value="bin\config.bin/CfgVehicles/rhs_msv_junior_sergeant"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="objList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ArmaObject" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="numberPhysicalWheels">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="modelSizes">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="[0.385521,0.516259,2.20523]"/>
+				<xsd:enumeration value="[1.6,2.2,2]"/>
+				<xsd:enumeration value="[13.7567,13.7567,13.7767]"/>
+				<xsd:enumeration value="[4.38222,6.03704,7.04692]"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="model">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="\ca\Misc\mutt_vysilacka.p3d"/>
+				<xsd:enumeration value="\ca\misc\JeepT.p3d"/>
+				<xsd:enumeration value="\ca\misc\heli_h_army.p3d"/>
+				<xsd:enumeration value="\rhsafrf\addons\rhs_infantry\rhs_msv_base.p3d"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="mod">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="AllInArmaTerrainPack"/>
+				<xsd:enumeration value="Leights_OPFOR"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="minSpeed">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="maximumLoad">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="maxSpeed">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+				<xsd:enumeration value="24"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="maxGForce">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="magazines" type="xsd:string"/>
+	<xsd:element name="loglines">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="string" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="logContainsErrors" type="xsd:boolean"/>
+	<xsd:element name="log">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="loglines"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="idx">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:short">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="11152"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="icon">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="\Ca\misc\data\icons\i_H_CA.paa"/>
+				<xsd:enumeration value="\Ca\misc\data\icons\i_Jeep_W_CA.paa"/>
+				<xsd:enumeration value="\ca\data\data\Unknown_object.paa"/>
+				<xsd:enumeration value="iconManLeader"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="hiddenSelectionsTextures" type="xsd:string"/>
+	<xsd:element name="hiddenSelections">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value=""/>
+				<xsd:enumeration value="camo1,camo2,camob"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="generalMacro">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="LOP_SLA_Infantry_SL"/>
+				<xsd:enumeration value="NonStrategic"/>
+				<xsd:enumeration value="Strategic"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="fuelCapacity">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="fireResistance">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="filter">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="[66,65,83,69]"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="faction">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Default"/>
+				<xsd:enumeration value="LOP_SLA"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="entry">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="All"/>
+				<xsd:enumeration value="AllVehicles"/>
+				<xsd:enumeration value="Building"/>
+				<xsd:enumeration value="CAManBase"/>
+				<xsd:enumeration value="HeliH"/>
+				<xsd:enumeration value="JeepWreck1"/>
+				<xsd:enumeration value="LOP_SLA_Infantry_SL"/>
+				<xsd:enumeration value="Land"/>
+				<xsd:enumeration value="Man"/>
+				<xsd:enumeration value="NonStrategic"/>
+				<xsd:enumeration value="SoldierGB"/>
+				<xsd:enumeration value="Static"/>
+				<xsd:enumeration value="Strategic"/>
+				<xsd:enumeration value="Vysilacka"/>
+				<xsd:enumeration value="rhs_infantry_msv_base"/>
+				<xsd:enumeration value="rhs_msv_junior_sergeant"/>
+				<xsd:enumeration value="rhs_msv_rifleman"/>
+				<xsd:enumeration value="rhs_msv_sergeant"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="displayName">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="H"/>
+				<xsd:enumeration value="HMMWV"/>
+				<xsd:enumeration value="Radio (RT-254)"/>
+				<xsd:enumeration value="Section Leader"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="crewExplosionProtection">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="crewCrashProtection">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="1"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="crew">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Civilian"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="createable" type="xsd:boolean"/>
+	<xsd:element name="className">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="HeliH"/>
+				<xsd:enumeration value="JeepWreck1"/>
+				<xsd:enumeration value="LOP_SLA_Infantry_SL"/>
+				<xsd:enumeration value="Vysilacka"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="cargoIsCoDriver">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="0/1"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="camouflage">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:enumeration value="1.4"/>
+				<xsd:enumeration value="2.0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="brakeDistance">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="5"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="boundingBox" type="xsd:string"/>
+	<xsd:element name="availableForSupportTypes">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="[]"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="author">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Bohemia Interactive"/>
+				<xsd:enumeration value="Leights OPFOR Pack"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="audible">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:enumeration value="0.0"/>
+				<xsd:enumeration value="0.05"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorWheels">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorVRotor">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorTurret">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorTracks">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorStructural">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="7"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorMissiles">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorLights">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:enumeration value="0.4"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorLegs">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorHull">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorHead">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorHands">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorHRotor">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorGun">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorGlass">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorFuel">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorEngine">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armorAvionics">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="armor">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:short">
+				<xsd:enumeration value="150"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="20"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="airCapacity">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="accuracy">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:enumeration value="0.2"/>
+				<xsd:enumeration value="0.3"/>
+				<xsd:enumeration value="1.6"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="accerleration">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:byte">
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ParentHiraObject">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="tier" type="xsd:byte"/>
+				<xsd:element name="entry" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CommanderOptics">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="ArmaObjects">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="objList"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ArmaObject">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="idx"/>
+				<xsd:element ref="className"/>
+				<xsd:element ref="generalMacro"/>
+				<xsd:element ref="vehicleClass"/>
+				<xsd:element ref="displayName"/>
+				<xsd:element ref="availableForSupportTypes"/>
+				<xsd:element ref="weapons"/>
+				<xsd:element ref="magazines"/>
+				<xsd:element ref="textSingular"/>
+				<xsd:element ref="filter"/>
+				<xsd:element ref="side"/>
+				<xsd:element ref="model"/>
+				<xsd:element ref="parent"/>
+				<xsd:element ref="ttl"/>
+				<xsd:element ref="mod"/>
+				<xsd:element ref="parents"/>
+				<xsd:element ref="faction"/>
+				<xsd:element ref="crew"/>
+				<xsd:element ref="picture"/>
+				<xsd:element ref="icon"/>
+				<xsd:element ref="slingLoadCargoMemoryPoints"/>
+				<xsd:element ref="crewCrashProtection"/>
+				<xsd:element ref="crewExplosionProtection"/>
+				<xsd:element ref="numberPhysicalWheels"/>
+				<xsd:element ref="tracksSpeed"/>
+				<xsd:element ref="CommanderOptics"/>
+				<xsd:element ref="maxGForce"/>
+				<xsd:element ref="fireResistance"/>
+				<xsd:element ref="airCapacity"/>
+				<xsd:element ref="tf_hasLRradio"/>
+				<xsd:element ref="author"/>
+				<xsd:element ref="cargoIsCoDriver"/>
+				<xsd:element ref="transportSoldier"/>
+				<xsd:element ref="transportVehicleCount"/>
+				<xsd:element ref="transportAmmo"/>
+				<xsd:element ref="transportFuel"/>
+				<xsd:element ref="transportRepair"/>
+				<xsd:element ref="maximumLoad"/>
+				<xsd:element ref="transportMaxWeapons"/>
+				<xsd:element ref="transportMaxMagazines"/>
+				<xsd:element ref="transportMaxBackpacks"/>
+				<xsd:element ref="fuelCapacity"/>
+				<xsd:element ref="armor"/>
+				<xsd:element ref="audible"/>
+				<xsd:element ref="accuracy"/>
+				<xsd:element ref="camouflage"/>
+				<xsd:element ref="accerleration"/>
+				<xsd:element ref="brakeDistance"/>
+				<xsd:element ref="maxSpeed"/>
+				<xsd:element ref="minSpeed"/>
+				<xsd:element ref="hiddenSelections"/>
+				<xsd:element ref="hiddenSelectionsTextures"/>
+				<xsd:element ref="armorStructural"/>
+				<xsd:element ref="armorFuel"/>
+				<xsd:element ref="armorGlass"/>
+				<xsd:element ref="armorLights"/>
+				<xsd:element ref="armorWheels"/>
+				<xsd:element ref="armorHull"/>
+				<xsd:element ref="armorTurret"/>
+				<xsd:element ref="armorGun"/>
+				<xsd:element ref="armorEngine"/>
+				<xsd:element ref="armorTracks"/>
+				<xsd:element ref="armorHead"/>
+				<xsd:element ref="armorHands"/>
+				<xsd:element ref="armorLegs"/>
+				<xsd:element ref="armorAvionics"/>
+				<xsd:element ref="armorVRotor"/>
+				<xsd:element ref="armorHRotor"/>
+				<xsd:element ref="armorMissiles"/>
+				<xsd:element ref="modelSizes"/>
+				<xsd:element ref="worldSizes"/>
+				<xsd:element ref="radius"/>
+				<xsd:element ref="boundingBox"/>
+				<xsd:element ref="parentClassHirachical"/>
+				<xsd:element ref="logContainsErrors"/>
+				<xsd:element ref="log"/>
+				<xsd:element ref="createable"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
