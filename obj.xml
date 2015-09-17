@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArmaObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <objList>
+    <ArmaObject>
+      <idx>1</idx>
+      <className>HeliH</className>
+      <generalMacro>NonStrategic</generalMacro>
+      <vehicleClass>Misc</vehicleClass>
+      <displayName>H</displayName>
+      <availableForSupportTypes>[]</availableForSupportTypes>
+      <weapons />
+      <magazines />
+      <textSingular>Building</textSingular>
+      <filter>[66,65,83,69]</filter>
+      <side>CIV</side>
+      <model>\ca\misc\heli_h_army.p3d</model>
+      <parent>bin\config.bin/CfgVehicles/NonStrategic</parent>
+      <ttl>0</ttl>
+      <mod>AllInArmaTerrainPack</mod>
+      <parents>
+        <parents>
+          <ParentHiraObject>
+            <tier>1</tier>
+            <entry>All</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>2</tier>
+            <entry>Static</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>3</tier>
+            <entry>Building</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>4</tier>
+            <entry>NonStrategic</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>5</tier>
+            <entry>HeliH</entry>
+          </ParentHiraObject>
+        </parents>
+      </parents>
+      <faction>Default</faction>
+      <crew>Civilian</crew>
+      <picture>pictureStaticObject</picture>
+      <icon>\Ca\misc\data\icons\i_H_CA.paa</icon>
+      <slingLoadCargoMemoryPoints />
+      <crewCrashProtection>1</crewCrashProtection>
+      <crewExplosionProtection>0</crewExplosionProtection>
+      <numberPhysicalWheels>0</numberPhysicalWheels>
+      <tracksSpeed>0</tracksSpeed>
+      <CommanderOptics />
+      <maxGForce>2</maxGForce>
+      <fireResistance>10</fireResistance>
+      <airCapacity>10</airCapacity>
+      <tf_hasLRradio>0</tf_hasLRradio>
+      <author>Bohemia Interactive</author>
+      <cargoIsCoDriver>0/1</cargoIsCoDriver>
+      <transportSoldier>0</transportSoldier>
+      <transportVehicleCount>0</transportVehicleCount>
+      <transportAmmo>0</transportAmmo>
+      <transportFuel>0</transportFuel>
+      <transportRepair>0</transportRepair>
+      <maximumLoad>0</maximumLoad>
+      <transportMaxWeapons>0</transportMaxWeapons>
+      <transportMaxMagazines>0</transportMaxMagazines>
+      <transportMaxBackpacks>0</transportMaxBackpacks>
+      <fuelCapacity>0</fuelCapacity>
+      <armor>150</armor>
+      <audible>0</audible>
+      <accuracy>0.2</accuracy>
+      <camouflage>2</camouflage>
+      <accerleration>0</accerleration>
+      <brakeDistance>5</brakeDistance>
+      <maxSpeed>0</maxSpeed>
+      <minSpeed>0</minSpeed>
+      <hiddenSelections />
+      <hiddenSelectionsTextures>[]</hiddenSelectionsTextures>
+      <armorStructural>1</armorStructural>
+      <armorFuel>0</armorFuel>
+      <armorGlass>0</armorGlass>
+      <armorLights>0.4</armorLights>
+      <armorWheels>0</armorWheels>
+      <armorHull>0</armorHull>
+      <armorTurret>0</armorTurret>
+      <armorGun>0</armorGun>
+      <armorEngine>0</armorEngine>
+      <armorTracks>0</armorTracks>
+      <armorHead>0</armorHead>
+      <armorHands>0</armorHands>
+      <armorLegs>0</armorLegs>
+      <armorAvionics>0</armorAvionics>
+      <armorVRotor>0</armorVRotor>
+      <armorHRotor>0</armorHRotor>
+      <armorMissiles>0</armorMissiles>
+      <modelSizes>[13.7567,13.7567,13.7767]</modelSizes>
+      <worldSizes>[13.6567,13.6567,13.7767]</worldSizes>
+      <radius>[9.72744,11.9252]</radius>
+      <boundingBox>[[-6.87834,-6.87834,-6.87834],[6.87834,6.87834,6.89838]]</boundingBox>
+      <parentClassHirachical>Building</parentClassHirachical>
+      <logContainsErrors>false</logContainsErrors>
+      <log>
+        <loglines />
+      </log>
+      <createable>true</createable>
+    </ArmaObject>
+    <ArmaObject>
+      <idx>2</idx>
+      <className>JeepWreck1</className>
+      <generalMacro>Strategic</generalMacro>
+      <vehicleClass>Objects</vehicleClass>
+      <displayName>HMMWV</displayName>
+      <availableForSupportTypes>[]</availableForSupportTypes>
+      <weapons />
+      <magazines />
+      <textSingular>Building</textSingular>
+      <filter>[66,65,83,69]</filter>
+      <side>CIV</side>
+      <model>\ca\misc\JeepT.p3d</model>
+      <parent>bin\config.bin/CfgVehicles/Strategic</parent>
+      <ttl>0</ttl>
+      <mod>AllInArmaTerrainPack</mod>
+      <parents>
+        <parents>
+          <ParentHiraObject>
+            <tier>1</tier>
+            <entry>All</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>2</tier>
+            <entry>Static</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>3</tier>
+            <entry>Building</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>4</tier>
+            <entry>Strategic</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>5</tier>
+            <entry>JeepWreck1</entry>
+          </ParentHiraObject>
+        </parents>
+      </parents>
+      <faction>Default</faction>
+      <crew>Civilian</crew>
+      <picture>pictureStaticObject</picture>
+      <icon>\Ca\misc\data\icons\i_Jeep_W_CA.paa</icon>
+      <slingLoadCargoMemoryPoints />
+      <crewCrashProtection>1</crewCrashProtection>
+      <crewExplosionProtection>0</crewExplosionProtection>
+      <numberPhysicalWheels>0</numberPhysicalWheels>
+      <tracksSpeed>0</tracksSpeed>
+      <CommanderOptics />
+      <maxGForce>2</maxGForce>
+      <fireResistance>10</fireResistance>
+      <airCapacity>10</airCapacity>
+      <tf_hasLRradio>0</tf_hasLRradio>
+      <author>Bohemia Interactive</author>
+      <cargoIsCoDriver>0/1</cargoIsCoDriver>
+      <transportSoldier>0</transportSoldier>
+      <transportVehicleCount>0</transportVehicleCount>
+      <transportAmmo>0</transportAmmo>
+      <transportFuel>0</transportFuel>
+      <transportRepair>0</transportRepair>
+      <maximumLoad>0</maximumLoad>
+      <transportMaxWeapons>0</transportMaxWeapons>
+      <transportMaxMagazines>0</transportMaxMagazines>
+      <transportMaxBackpacks>0</transportMaxBackpacks>
+      <fuelCapacity>0</fuelCapacity>
+      <armor>20</armor>
+      <audible>0</audible>
+      <accuracy>0.3</accuracy>
+      <camouflage>2</camouflage>
+      <accerleration>0</accerleration>
+      <brakeDistance>5</brakeDistance>
+      <maxSpeed>0</maxSpeed>
+      <minSpeed>0</minSpeed>
+      <hiddenSelections />
+      <hiddenSelectionsTextures>[]</hiddenSelectionsTextures>
+      <armorStructural>1</armorStructural>
+      <armorFuel>0</armorFuel>
+      <armorGlass>0</armorGlass>
+      <armorLights>0.4</armorLights>
+      <armorWheels>0</armorWheels>
+      <armorHull>0</armorHull>
+      <armorTurret>0</armorTurret>
+      <armorGun>0</armorGun>
+      <armorEngine>0</armorEngine>
+      <armorTracks>0</armorTracks>
+      <armorHead>0</armorHead>
+      <armorHands>0</armorHands>
+      <armorLegs>0</armorLegs>
+      <armorAvionics>0</armorAvionics>
+      <armorVRotor>0</armorVRotor>
+      <armorHRotor>0</armorHRotor>
+      <armorMissiles>0</armorMissiles>
+      <modelSizes>[4.38222,6.03704,7.04692]</modelSizes>
+      <worldSizes>[4.1646,5.81942,7.04692]</worldSizes>
+      <radius>[3.72994,5.131]</radius>
+      <boundingBox>[[-2.19111,-3.01852,-3.52346],[2.19111,3.01852,3.52346]]</boundingBox>
+      <parentClassHirachical>Building</parentClassHirachical>
+      <logContainsErrors>false</logContainsErrors>
+      <log>
+        <loglines />
+      </log>
+      <createable>true</createable>
+    </ArmaObject>
+    <ArmaObject>
+      <idx>3</idx>
+      <className>Vysilacka</className>
+      <generalMacro>Strategic</generalMacro>
+      <vehicleClass>Objects</vehicleClass>
+      <displayName>Radio (RT-254)</displayName>
+      <availableForSupportTypes>[]</availableForSupportTypes>
+      <weapons />
+      <magazines />
+      <textSingular>Building</textSingular>
+      <filter>[66,65,83,69]</filter>
+      <side>CIV</side>
+      <model>\ca\Misc\mutt_vysilacka.p3d</model>
+      <parent>bin\config.bin/CfgVehicles/JeepWreck1</parent>
+      <ttl>0</ttl>
+      <mod>AllInArmaTerrainPack</mod>
+      <parents>
+        <parents>
+          <ParentHiraObject>
+            <tier>1</tier>
+            <entry>All</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>2</tier>
+            <entry>Static</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>3</tier>
+            <entry>Building</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>4</tier>
+            <entry>Strategic</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>5</tier>
+            <entry>JeepWreck1</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>6</tier>
+            <entry>Vysilacka</entry>
+          </ParentHiraObject>
+        </parents>
+      </parents>
+      <faction>Default</faction>
+      <crew>Civilian</crew>
+      <picture>pictureStaticObject</picture>
+      <icon>\ca\data\data\Unknown_object.paa</icon>
+      <slingLoadCargoMemoryPoints />
+      <crewCrashProtection>1</crewCrashProtection>
+      <crewExplosionProtection>0</crewExplosionProtection>
+      <numberPhysicalWheels>0</numberPhysicalWheels>
+      <tracksSpeed>0</tracksSpeed>
+      <CommanderOptics />
+      <maxGForce>2</maxGForce>
+      <fireResistance>10</fireResistance>
+      <airCapacity>10</airCapacity>
+      <tf_hasLRradio>0</tf_hasLRradio>
+      <author>Bohemia Interactive</author>
+      <cargoIsCoDriver>0/1</cargoIsCoDriver>
+      <transportSoldier>0</transportSoldier>
+      <transportVehicleCount>0</transportVehicleCount>
+      <transportAmmo>0</transportAmmo>
+      <transportFuel>0</transportFuel>
+      <transportRepair>0</transportRepair>
+      <maximumLoad>0</maximumLoad>
+      <transportMaxWeapons>0</transportMaxWeapons>
+      <transportMaxMagazines>0</transportMaxMagazines>
+      <transportMaxBackpacks>0</transportMaxBackpacks>
+      <fuelCapacity>0</fuelCapacity>
+      <armor>20</armor>
+      <audible>0</audible>
+      <accuracy>0.3</accuracy>
+      <camouflage>2</camouflage>
+      <accerleration>0</accerleration>
+      <brakeDistance>5</brakeDistance>
+      <maxSpeed>0</maxSpeed>
+      <minSpeed>0</minSpeed>
+      <hiddenSelections />
+      <hiddenSelectionsTextures>[]</hiddenSelectionsTextures>
+      <armorStructural>1</armorStructural>
+      <armorFuel>0</armorFuel>
+      <armorGlass>0</armorGlass>
+      <armorLights>0.4</armorLights>
+      <armorWheels>0</armorWheels>
+      <armorHull>0</armorHull>
+      <armorTurret>0</armorTurret>
+      <armorGun>0</armorGun>
+      <armorEngine>0</armorEngine>
+      <armorTracks>0</armorTracks>
+      <armorHead>0</armorHead>
+      <armorHands>0</armorHands>
+      <armorLegs>0</armorLegs>
+      <armorAvionics>0</armorAvionics>
+      <armorVRotor>0</armorVRotor>
+      <armorHRotor>0</armorHRotor>
+      <armorMissiles>0</armorMissiles>
+      <modelSizes>[0.385521,0.516259,2.20523]</modelSizes>
+      <worldSizes>[0.260275,0.391013,2.20523]</worldSizes>
+      <radius>[0.32216,1.14872]</radius>
+      <boundingBox>[[-0.19276,-0.258129,-1.10262],[0.19276,0.258129,1.10262]]</boundingBox>
+      <parentClassHirachical>Building</parentClassHirachical>
+      <logContainsErrors>false</logContainsErrors>
+      <log>
+        <loglines />
+      </log>
+      <createable>true</createable>
+    </ArmaObject>
+    <ArmaObject>
+      <idx>11152</idx>
+      <className>LOP_SLA_Infantry_SL</className>
+      <generalMacro>LOP_SLA_Infantry_SL</generalMacro>
+      <vehicleClass>LOP_Men</vehicleClass>
+      <displayName>Section Leader</displayName>
+      <availableForSupportTypes>[]</availableForSupportTypes>
+      <weapons>rhs_weap_akm</weapons>
+      <magazines>7x rhs_30Rnd_762x39mm,1x rhs_mag_rdg2_white,1x rhs_mag_rdg2_black,2x rhs_mag_rgd5</magazines>
+      <textSingular>infantry</textSingular>
+      <filter>[66,65,83,69]</filter>
+      <side>EAST</side>
+      <model>\rhsafrf\addons\rhs_infantry\rhs_msv_base.p3d</model>
+      <parent>bin\config.bin/CfgVehicles/rhs_msv_junior_sergeant</parent>
+      <ttl>0</ttl>
+      <mod>Leights_OPFOR</mod>
+      <parents>
+        <parents>
+          <ParentHiraObject>
+            <tier>1</tier>
+            <entry>All</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>2</tier>
+            <entry>AllVehicles</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>3</tier>
+            <entry>Land</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>4</tier>
+            <entry>Man</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>5</tier>
+            <entry>CAManBase</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>6</tier>
+            <entry>SoldierGB</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>7</tier>
+            <entry>rhs_infantry_msv_base</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>8</tier>
+            <entry>rhs_msv_rifleman</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>9</tier>
+            <entry>rhs_msv_sergeant</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>10</tier>
+            <entry>rhs_msv_junior_sergeant</entry>
+          </ParentHiraObject>
+          <ParentHiraObject>
+            <tier>11</tier>
+            <entry>LOP_SLA_Infantry_SL</entry>
+          </ParentHiraObject>
+        </parents>
+      </parents>
+      <faction>LOP_SLA</faction>
+      <crew>Civilian</crew>
+      <picture />
+      <icon>iconManLeader</icon>
+      <slingLoadCargoMemoryPoints />
+      <crewCrashProtection>1</crewCrashProtection>
+      <crewExplosionProtection>0</crewExplosionProtection>
+      <numberPhysicalWheels>0</numberPhysicalWheels>
+      <tracksSpeed>0</tracksSpeed>
+      <CommanderOptics />
+      <maxGForce>2</maxGForce>
+      <fireResistance>10</fireResistance>
+      <airCapacity>10</airCapacity>
+      <tf_hasLRradio>0</tf_hasLRradio>
+      <author>Leights OPFOR Pack</author>
+      <cargoIsCoDriver>0/1</cargoIsCoDriver>
+      <transportSoldier>0</transportSoldier>
+      <transportVehicleCount>0</transportVehicleCount>
+      <transportAmmo>0</transportAmmo>
+      <transportFuel>0</transportFuel>
+      <transportRepair>0</transportRepair>
+      <maximumLoad>0</maximumLoad>
+      <transportMaxWeapons>0</transportMaxWeapons>
+      <transportMaxMagazines>0</transportMaxMagazines>
+      <transportMaxBackpacks>0</transportMaxBackpacks>
+      <fuelCapacity>0</fuelCapacity>
+      <armor>2</armor>
+      <audible>0.05</audible>
+      <accuracy>1.6</accuracy>
+      <camouflage>1.4</camouflage>
+      <accerleration>0</accerleration>
+      <brakeDistance>1</brakeDistance>
+      <maxSpeed>24</maxSpeed>
+      <minSpeed>0</minSpeed>
+      <hiddenSelections>camo1,camo2,camob</hiddenSelections>
+      <hiddenSelectionsTextures>["rhsafrf\addons\rhs_infantry\data\flora_co.paa","rhsafrf\addons\rhs_infantry\data\shevrons_co.paa"]</hiddenSelectionsTextures>
+      <armorStructural>7</armorStructural>
+      <armorFuel>0</armorFuel>
+      <armorGlass>0</armorGlass>
+      <armorLights>0.4</armorLights>
+      <armorWheels>0</armorWheels>
+      <armorHull>0</armorHull>
+      <armorTurret>0</armorTurret>
+      <armorGun>0</armorGun>
+      <armorEngine>0</armorEngine>
+      <armorTracks>0</armorTracks>
+      <armorHead>0</armorHead>
+      <armorHands>0</armorHands>
+      <armorLegs>0</armorLegs>
+      <armorAvionics>0</armorAvionics>
+      <armorVRotor>0</armorVRotor>
+      <armorHRotor>0</armorHRotor>
+      <armorMissiles>0</armorMissiles>
+      <modelSizes>[1.6,2.2,2]</modelSizes>
+      <worldSizes>[1.5,2,2]</worldSizes>
+      <radius>[1.32004,2.31355]</radius>
+      <boundingBox>[[-0.8,-1.15,-0.1],[0.8,1.05,1.9]]</boundingBox>
+      <parentClassHirachical>Man</parentClassHirachical>
+      <logContainsErrors>true</logContainsErrors>
+      <log>
+        <loglines>
+          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_AT"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_Marksman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_Engineer"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_GL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_AT"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_Engineer"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_Marksman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_GL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_Crewman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_TL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Corpsman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_AT"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Engineer"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Marksman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_GL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Crewman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
+        </loglines>
+      </log>
+      <createable>true</createable>
+    </ArmaObject>
+  </objList>
+</ArmaObjects>

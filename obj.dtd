@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD erstellt mit XMLSpy v2013 rel. 2 sp2 (x64) (http://www.altova.com)-->
+<!ELEMENT worldSizes (#PCDATA)>
+<!ELEMENT weapons (#PCDATA)>
+<!ELEMENT vehicleClass (#PCDATA)>
+<!ELEMENT ttl (#PCDATA)>
+<!ELEMENT transportVehicleCount (#PCDATA)>
+<!ELEMENT transportSoldier (#PCDATA)>
+<!ELEMENT transportRepair (#PCDATA)>
+<!ELEMENT transportMaxWeapons (#PCDATA)>
+<!ELEMENT transportMaxMagazines (#PCDATA)>
+<!ELEMENT transportMaxBackpacks (#PCDATA)>
+<!ELEMENT transportFuel (#PCDATA)>
+<!ELEMENT transportAmmo (#PCDATA)>
+<!ELEMENT tracksSpeed (#PCDATA)>
+<!ELEMENT tier (#PCDATA)>
+<!ELEMENT tf_hasLRradio (#PCDATA)>
+<!ELEMENT textSingular (#PCDATA)>
+<!ELEMENT string (#PCDATA)>
+<!ELEMENT slingLoadCargoMemoryPoints EMPTY>
+<!ELEMENT side (#PCDATA)>
+<!ELEMENT radius (#PCDATA)>
+<!ELEMENT picture (#PCDATA)>
+<!ELEMENT parents ((ParentHiraObject+ | parents))>
+<!ELEMENT parentClassHirachical (#PCDATA)>
+<!ELEMENT parent (#PCDATA)>
+<!ELEMENT objList ((ArmaObject+))>
+<!ELEMENT numberPhysicalWheels (#PCDATA)>
+<!ELEMENT modelSizes (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT mod (#PCDATA)>
+<!ELEMENT minSpeed (#PCDATA)>
+<!ELEMENT maximumLoad (#PCDATA)>
+<!ELEMENT maxSpeed (#PCDATA)>
+<!ELEMENT maxGForce (#PCDATA)>
+<!ELEMENT magazines (#PCDATA)>
+<!ELEMENT loglines ((string*))>
+<!ELEMENT logContainsErrors (#PCDATA)>
+<!ELEMENT log ((loglines))>
+<!ELEMENT idx (#PCDATA)>
+<!ELEMENT icon (#PCDATA)>
+<!ELEMENT hiddenSelectionsTextures (#PCDATA)>
+<!ELEMENT hiddenSelections (#PCDATA)>
+<!ELEMENT generalMacro (#PCDATA)>
+<!ELEMENT fuelCapacity (#PCDATA)>
+<!ELEMENT fireResistance (#PCDATA)>
+<!ELEMENT filter (#PCDATA)>
+<!ELEMENT faction (#PCDATA)>
+<!ELEMENT entry (#PCDATA)>
+<!ELEMENT displayName (#PCDATA)>
+<!ELEMENT crewExplosionProtection (#PCDATA)>
+<!ELEMENT crewCrashProtection (#PCDATA)>
+<!ELEMENT crew (#PCDATA)>
+<!ELEMENT createable (#PCDATA)>
+<!ELEMENT className (#PCDATA)>
+<!ELEMENT cargoIsCoDriver (#PCDATA)>
+<!ELEMENT camouflage (#PCDATA)>
+<!ELEMENT brakeDistance (#PCDATA)>
+<!ELEMENT boundingBox (#PCDATA)>
+<!ELEMENT availableForSupportTypes (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT audible (#PCDATA)>
+<!ELEMENT armorWheels (#PCDATA)>
+<!ELEMENT armorVRotor (#PCDATA)>
+<!ELEMENT armorTurret (#PCDATA)>
+<!ELEMENT armorTracks (#PCDATA)>
+<!ELEMENT armorStructural (#PCDATA)>
+<!ELEMENT armorMissiles (#PCDATA)>
+<!ELEMENT armorLights (#PCDATA)>
+<!ELEMENT armorLegs (#PCDATA)>
+<!ELEMENT armorHull (#PCDATA)>
+<!ELEMENT armorHead (#PCDATA)>
+<!ELEMENT armorHands (#PCDATA)>
+<!ELEMENT armorHRotor (#PCDATA)>
+<!ELEMENT armorGun (#PCDATA)>
+<!ELEMENT armorGlass (#PCDATA)>
+<!ELEMENT armorFuel (#PCDATA)>
+<!ELEMENT armorEngine (#PCDATA)>
+<!ELEMENT armorAvionics (#PCDATA)>
+<!ELEMENT armor (#PCDATA)>
+<!ELEMENT airCapacity (#PCDATA)>
+<!ELEMENT accuracy (#PCDATA)>
+<!ELEMENT accerleration (#PCDATA)>
+<!ELEMENT ParentHiraObject ((tier, entry))>
+<!ELEMENT CommanderOptics EMPTY>
+<!ELEMENT ArmaObjects ((objList))>
+<!ATTLIST ArmaObjects
+	xmlns:xsd CDATA #FIXED "http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+>
+<!ELEMENT ArmaObject ((idx, className, generalMacro, vehicleClass, displayName, availableForSupportTypes, weapons, magazines, textSingular, filter, side, model, parent, ttl, mod, parents, faction, crew, picture, icon, slingLoadCargoMemoryPoints, crewCrashProtection, crewExplosionProtection, numberPhysicalWheels, tracksSpeed, CommanderOptics, maxGForce, fireResistance, airCapacity, tf_hasLRradio, author, cargoIsCoDriver, transportSoldier, transportVehicleCount, transportAmmo, transportFuel, transportRepair, maximumLoad, transportMaxWeapons, transportMaxMagazines, transportMaxBackpacks, fuelCapacity, armor, audible, accuracy, camouflage, accerleration, brakeDistance, maxSpeed, minSpeed, hiddenSelections, hiddenSelectionsTextures, armorStructural, armorFuel, armorGlass, armorLights, armorWheels, armorHull, armorTurret, armorGun, armorEngine, armorTracks, armorHead, armorHands, armorLegs, armorAvionics, armorVRotor, armorHRotor, armorMissiles, modelSizes, worldSizes, radius, boundingBox, parentClassHirachical, logContainsErrors, log, createable))>

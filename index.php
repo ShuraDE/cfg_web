@@ -1,4 +1,4 @@
-<html><head></head><body><a name="top"></a>
+<html><head></head><body>
 <?php if (($_SERVER['HTTP_REFERER']=="http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']) &&(!empty($_POST))){ extract($_POST);}
 if ($Submit){
   $db = mysql_connect("localhost","usr","pw");
@@ -18,9 +18,8 @@ if ($Submit){
   print "</table>";}
   mysql_close($db);
 }
-if (!$Submit){
-  print ("<form method \"POST\" action=\"<? echo $_SERVER['PHP_SELF']; ?>\">Search classname: <input name=\"classname\" size=\"40\" maxlength=\"255\"><br>");
-  print ("<input type=\"Submit\" name=\"Submit\" value=\"Go\"></form>");
-}
-?>
+if (!$Submit){ ?>
+  <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">Search classname: <input name="classname" size="40" maxlength="255"><br>
+  <input type="Submit" name="Submit" value="Go"></form>
+<?php } ?>
 </body></html>
