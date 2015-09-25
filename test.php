@@ -1,11 +1,14 @@
 <?php
 include_once 'armaObjects.php';
+ini_set('implicit_flush', true);
 
-$debug = 5;
 $armaObjectList = array();
-
 $objClass = new ArmaObjectXML;
-//$aObjs = new ArmaObjects("obj.xml");
+$objectReadCounter = 0;
+
+$debug_outputImports = true;
+
+echo "read data<br/>";
 
 $sax = xml_parser_create();
 xml_set_object($sax,$objClass);
@@ -13,12 +16,12 @@ xml_set_element_handler($sax, 'sax_start', 'sax_end');
 xml_set_character_data_handler($sax, 'character_data');
 xml_parser_set_option($sax, XML_OPTION_CASE_FOLDING, false);
 //xml_parser_set_option($sax, XML_OPTION_SKIP_WHITE, true);
-xml_parse($sax, file_get_contents('obj.xml'), true);
+xml_parse($sax, file_get_contents('obj_more.xml'), true);
 xml_parser_free($sax);
 
-
+echo "<br/>reading " . $objectReadCounter . "<br/>";
 foreach($armaObjectList as $obj) {
-	echo $obj->className . "<br/>" . $obj->displayName . "<br/>";
+	echo $obj->className . "-" . $obj->displayName . "<br/>";
 }
 
 
@@ -37,7 +40,21 @@ class ArmaObjectXML {
 	function sax_end($sax, $tag) {
 	  if ($tag == 'ArmaObject') { 
 		global $armaObjectList;
-		$this->item->display();
+		global $objectReadCounter;
+		global $debug_outputImports;
+		
+		//raise import counter +1
+		$objectReadCounter++;
+		
+		//output import
+		if ($debug_outputImports) {
+			echo str_pad($objectReadCounter, 7, " ", STR_PAD_LEFT) . " " . $this->item->className . "<br/>";
+		} else {
+			//$this->item->display();
+			if ($objectReadCounter % 300 == 0) { echo "<br/>"; }
+			echo "." ;
+		}
+		//append object to collection, clear active item
 		array_push($armaObjectList, $this->item);
 		unset($this->item);
 	  }
@@ -51,44 +68,4 @@ class ArmaObjectXML {
 		}  
 	}   
 }
-//$xml = simplexml_load_file("obj.xml");
-
-/*
-libxml_use_internal_errors(true);
-try{
-	$xmlToObject = simplexml_load_file("obj.xml"); //new SimpleXMLElement($notSoWellFormedXML);
-} catch (Exception $e){
-	echo 'Please try again later...';
-	exit();
-}
-*/
-//print_r($xml);
-/*
-$allData = new ArmaObjects($xml->children());
-
-
-foreach($xml->children() as $obj) {
-	print($obj->ArmaObject[0]->className . "<br/>");
-	//var_dump($obj->children());//
-	
-	print("<br/>");
-	print($obj->children()->count());
-	print("<br/>");
-	
-	
-	
-}
-
-foreach($xml->children()->children() as $obj) {
-	print($obj->className . "<br/>");
-	print($obj->displayName . "<br/>");
-	echo $obj->__toString();
-	//var_dump($obj);
-	print("<br/>");
-	print($obj->children()->count());
-	print("<br/>");
-}
-
-echo($obj->__toString());
-*/
 ?>
