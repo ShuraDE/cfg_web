@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ArmaObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <objList>
     <ArmaObject>
@@ -18,28 +17,26 @@
       <ttl>0</ttl>
       <mod>AllInArmaTerrainPack</mod>
       <parents>
-        <parents>
-          <ParentHiraObject>
-            <tier>1</tier>
-            <entry>All</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>2</tier>
-            <entry>Static</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>3</tier>
-            <entry>Building</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>4</tier>
-            <entry>NonStrategic</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>5</tier>
-            <entry>HeliH</entry>
-          </ParentHiraObject>
-        </parents>
+        <ParentHiraObject>
+          <tier>1</tier>
+          <entry>All</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>2</tier>
+          <entry>Static</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>3</tier>
+          <entry>Building</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>4</tier>
+          <entry>NonStrategic</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>5</tier>
+          <entry>HeliH</entry>
+        </ParentHiraObject>
       </parents>
       <faction>Default</faction>
       <crew>Civilian</crew>
@@ -122,28 +119,26 @@
       <ttl>0</ttl>
       <mod>AllInArmaTerrainPack</mod>
       <parents>
-        <parents>
-          <ParentHiraObject>
-            <tier>1</tier>
-            <entry>All</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>2</tier>
-            <entry>Static</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>3</tier>
-            <entry>Building</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>4</tier>
-            <entry>Strategic</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>5</tier>
-            <entry>JeepWreck1</entry>
-          </ParentHiraObject>
-        </parents>
+        <ParentHiraObject>
+          <tier>1</tier>
+          <entry>All</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>2</tier>
+          <entry>Static</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>3</tier>
+          <entry>Building</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>4</tier>
+          <entry>Strategic</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>5</tier>
+          <entry>JeepWreck1</entry>
+        </ParentHiraObject>
       </parents>
       <faction>Default</faction>
       <crew>Civilian</crew>
@@ -226,32 +221,30 @@
       <ttl>0</ttl>
       <mod>AllInArmaTerrainPack</mod>
       <parents>
-        <parents>
-          <ParentHiraObject>
-            <tier>1</tier>
-            <entry>All</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>2</tier>
-            <entry>Static</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>3</tier>
-            <entry>Building</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>4</tier>
-            <entry>Strategic</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>5</tier>
-            <entry>JeepWreck1</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>6</tier>
-            <entry>Vysilacka</entry>
-          </ParentHiraObject>
-        </parents>
+        <ParentHiraObject>
+          <tier>1</tier>
+          <entry>All</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>2</tier>
+          <entry>Static</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>3</tier>
+          <entry>Building</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>4</tier>
+          <entry>Strategic</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>5</tier>
+          <entry>JeepWreck1</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>6</tier>
+          <entry>Vysilacka</entry>
+        </ParentHiraObject>
       </parents>
       <faction>Default</faction>
       <crew>Civilian</crew>
@@ -318,73 +311,51 @@
       <createable>true</createable>
     </ArmaObject>
     <ArmaObject>
-      <idx>11152</idx>
-      <className>LOP_SLA_Infantry_SL</className>
-      <generalMacro>LOP_SLA_Infantry_SL</generalMacro>
-      <vehicleClass>LOP_Men</vehicleClass>
-      <displayName>Section Leader</displayName>
+      <idx>4</idx>
+      <className>Fence_Ind</className>
+      <generalMacro>Fence</generalMacro>
+      <vehicleClass>Structures</vehicleClass>
+      <displayName>Fence (industrial)</displayName>
       <availableForSupportTypes>[]</availableForSupportTypes>
-      <weapons>rhs_weap_akm</weapons>
-      <magazines>7x rhs_30Rnd_762x39mm,1x rhs_mag_rdg2_white,1x rhs_mag_rdg2_black,2x rhs_mag_rgd5</magazines>
-      <textSingular>infantry</textSingular>
+      <weapons />
+      <magazines />
+      <textSingular>Fence</textSingular>
       <filter>[66,65,83,69]</filter>
-      <side>EAST</side>
-      <model>\rhsafrf\addons\rhs_infantry\rhs_msv_base.p3d</model>
-      <parent>bin\config.bin/CfgVehicles/rhs_msv_junior_sergeant</parent>
+      <side>CIV</side>
+      <model>\ca\structures\wall\Wall_IndFnc_3.p3d</model>
+      <parent>bin\config.bin/CfgVehicles/Fence</parent>
       <ttl>0</ttl>
-      <mod>Leights_OPFOR</mod>
+      <mod>AllInArmaTerrainPack</mod>
       <parents>
-        <parents>
-          <ParentHiraObject>
-            <tier>1</tier>
-            <entry>All</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>2</tier>
-            <entry>AllVehicles</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>3</tier>
-            <entry>Land</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>4</tier>
-            <entry>Man</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>5</tier>
-            <entry>CAManBase</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>6</tier>
-            <entry>SoldierGB</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>7</tier>
-            <entry>rhs_infantry_msv_base</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>8</tier>
-            <entry>rhs_msv_rifleman</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>9</tier>
-            <entry>rhs_msv_sergeant</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>10</tier>
-            <entry>rhs_msv_junior_sergeant</entry>
-          </ParentHiraObject>
-          <ParentHiraObject>
-            <tier>11</tier>
-            <entry>LOP_SLA_Infantry_SL</entry>
-          </ParentHiraObject>
-        </parents>
+        <ParentHiraObject>
+          <tier>1</tier>
+          <entry>All</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>2</tier>
+          <entry>Static</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>3</tier>
+          <entry>Building</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>4</tier>
+          <entry>NonStrategic</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>5</tier>
+          <entry>Fence</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>6</tier>
+          <entry>Fence_Ind</entry>
+        </ParentHiraObject>
       </parents>
-      <faction>LOP_SLA</faction>
+      <faction>Default</faction>
       <crew>Civilian</crew>
-      <picture />
-      <icon>iconManLeader</icon>
+      <picture>pictureStaticObject</picture>
+      <icon>iconObject</icon>
       <slingLoadCargoMemoryPoints />
       <crewCrashProtection>1</crewCrashProtection>
       <crewExplosionProtection>0</crewExplosionProtection>
@@ -395,7 +366,7 @@
       <fireResistance>10</fireResistance>
       <airCapacity>10</airCapacity>
       <tf_hasLRradio>0</tf_hasLRradio>
-      <author>Leights OPFOR Pack</author>
+      <author>Bohemia Interactive</author>
       <cargoIsCoDriver>0/1</cargoIsCoDriver>
       <transportSoldier>0</transportSoldier>
       <transportVehicleCount>0</transportVehicleCount>
@@ -407,17 +378,17 @@
       <transportMaxMagazines>0</transportMaxMagazines>
       <transportMaxBackpacks>0</transportMaxBackpacks>
       <fuelCapacity>0</fuelCapacity>
-      <armor>2</armor>
-      <audible>0.05</audible>
-      <accuracy>1.6</accuracy>
-      <camouflage>1.4</camouflage>
+      <armor>200</armor>
+      <audible>0</audible>
+      <accuracy>0.3</accuracy>
+      <camouflage>2</camouflage>
       <accerleration>0</accerleration>
-      <brakeDistance>1</brakeDistance>
-      <maxSpeed>24</maxSpeed>
+      <brakeDistance>5</brakeDistance>
+      <maxSpeed>0</maxSpeed>
       <minSpeed>0</minSpeed>
-      <hiddenSelections>camo1,camo2,camob</hiddenSelections>
-      <hiddenSelectionsTextures>["rhsafrf\addons\rhs_infantry\data\flora_co.paa","rhsafrf\addons\rhs_infantry\data\shevrons_co.paa"]</hiddenSelectionsTextures>
-      <armorStructural>7</armorStructural>
+      <hiddenSelections />
+      <hiddenSelectionsTextures>[]</hiddenSelectionsTextures>
+      <armorStructural>1</armorStructural>
       <armorFuel>0</armorFuel>
       <armorGlass>0</armorGlass>
       <armorLights>0.4</armorLights>
@@ -434,31 +405,14 @@
       <armorVRotor>0</armorVRotor>
       <armorHRotor>0</armorHRotor>
       <armorMissiles>0</armorMissiles>
-      <modelSizes>[1.6,2.2,2]</modelSizes>
-      <worldSizes>[1.5,2,2]</worldSizes>
-      <radius>[1.32004,2.31355]</radius>
-      <boundingBox>[[-0.8,-1.15,-0.1],[0.8,1.05,1.9]]</boundingBox>
-      <parentClassHirachical>Man</parentClassHirachical>
-      <logContainsErrors>true</logContainsErrors>
+      <modelSizes>[3.005,0.524565,3.37316]</modelSizes>
+      <worldSizes>[2.90539,0.424955,3.37316]</worldSizes>
+      <radius>[1.52522,2.27395]</radius>
+      <boundingBox>[[-1.5025,-0.262282,-1.68658],[1.5025,0.262282,1.68658]]</boundingBox>
+      <parentClassHirachical>Building</parentClassHirachical>
+      <logContainsErrors>false</logContainsErrors>
       <log>
-        <loglines>
-          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_AT"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_Marksman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_Engineer"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_NAPA_Infantry_GL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_AT"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_Engineer"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_Marksman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_GL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_PMC_Infantry_Crewman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_TL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Corpsman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_AT"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Engineer"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Marksman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_GL"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-          <string>Deinitialized shape [Class: "LOP_RACS_Infantry_Crewman"; Shape: "a3\characters_f_beta\indep\ia_soldier_01.p3d";]</string>
-        </loglines>
+        <loglines />
       </log>
       <createable>true</createable>
     </ArmaObject>
