@@ -6,7 +6,11 @@ $armaObjectList = array();
 $objClass = new ArmaObjectXML;
 $objectReadCounter = 0;
 
-$debug_outputImports = true;
+$inputFileXML = "obj.xml"; //obj_more.xml
+
+$debug_outputImports = false;
+
+
 
 echo "read data<br/>";
 
@@ -16,12 +20,12 @@ xml_set_element_handler($sax, 'sax_start', 'sax_end');
 xml_set_character_data_handler($sax, 'character_data');
 xml_parser_set_option($sax, XML_OPTION_CASE_FOLDING, false);
 //xml_parser_set_option($sax, XML_OPTION_SKIP_WHITE, true);
-xml_parse($sax, file_get_contents('obj_more.xml'), true);
+xml_parse($sax, file_get_contents($inputFileXML), true);
 xml_parser_free($sax);
 
 echo "<br/>reading " . $objectReadCounter . "<br/>";
 foreach($armaObjectList as $obj) {
-	echo $obj->className . "-" . $obj->displayName . "<br/>";
+	echo $obj->className . "-" . $obj->log . "-" . $obj->parents . "-" . $obj->parent . "<br/>";
 }
 
 
@@ -30,11 +34,31 @@ class ArmaObjectXML {
 	var $item;
 
 	function sax_start($sax, $tag, $attr) {
+		
 	  if ($tag == 'ArmaObject') { 
 		$this->item = new ArmaObject; 
 	  } elseif (!empty($this->item)) {
 		$this->tag = $tag;
 	  }
+
+/* todo, class corrections....	  
+		
+		switch ($tag) {
+			case 'ArmaObject':
+				$this->item = new ArmaObject; 
+				break;
+			case 'parents':
+				$this->item = new ArmaObjectParents;
+				break;
+			case 'log':
+				$this->item = new ArmaObjectParents;
+				break;
+			default:
+				if(!empty($this->item)) {
+					$this->tag = $tag;
+				}
+		}
+*/		
 	}
 	
 	function sax_end($sax, $tag) {

@@ -416,5 +416,110 @@
       </log>
       <createable>true</createable>
     </ArmaObject>
+    <ArmaObject>
+      <idx>7069</idx>
+      <className>xcam_benzina_schnell</className>
+      <generalMacro>Static</generalMacro>
+      <vehicleClass>xCam_A2_Industrial</vehicleClass>
+      <displayName>xCam_benzina_schnell</displayName>
+      <availableForSupportTypes>[]</availableForSupportTypes>
+      <weapons />
+      <magazines />
+      <textSingular>Unknown</textSingular>
+      <filter>[66,65,83,69]</filter>
+      <side>NEUTRAL</side>
+      <model>\ca\buildings\benzina_schnell.p3d</model>
+      <parent>bin\config.bin/CfgVehicles/xCam_A2_Industrial_DET</parent>
+      <ttl>0</ttl>
+      <mod>xCam</mod>
+      <parents>
+        <ParentHiraObject>
+          <tier>1</tier>
+          <entry>All</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>2</tier>
+          <entry>Static</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>3</tier>
+          <entry>xCam_A2_Industrial_Base</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>4</tier>
+          <entry>xCam_A2_Industrial_DET</entry>
+        </ParentHiraObject>
+        <ParentHiraObject>
+          <tier>5</tier>
+          <entry>xcam_benzina_schnell</entry>
+        </ParentHiraObject>
+      </parents>
+      <faction>Default</faction>
+      <crew>Civilian</crew>
+      <picture>pictureStaticObject</picture>
+      <icon>\xCAM\xCAM_EU\icon\IND.paa</icon>
+      <slingLoadCargoMemoryPoints />
+      <crewCrashProtection>1</crewCrashProtection>
+      <crewExplosionProtection>0</crewExplosionProtection>
+      <numberPhysicalWheels>0</numberPhysicalWheels>
+      <tracksSpeed>0</tracksSpeed>
+      <CommanderOptics />
+      <maxGForce>2</maxGForce>
+      <fireResistance>10</fireResistance>
+      <airCapacity>10</airCapacity>
+      <tf_hasLRradio>0</tf_hasLRradio>
+      <author>Bohemia Interactive</author>
+      <cargoIsCoDriver>0/1</cargoIsCoDriver>
+      <transportSoldier>0</transportSoldier>
+      <transportVehicleCount>0</transportVehicleCount>
+      <transportAmmo>0</transportAmmo>
+      <transportFuel>0</transportFuel>
+      <transportRepair>0</transportRepair>
+      <maximumLoad>0</maximumLoad>
+      <transportMaxWeapons>0</transportMaxWeapons>
+      <transportMaxMagazines>0</transportMaxMagazines>
+      <transportMaxBackpacks>0</transportMaxBackpacks>
+      <fuelCapacity>0</fuelCapacity>
+      <armor>300</armor>
+      <audible>0</audible>
+      <accuracy>1000</accuracy>
+      <camouflage>2</camouflage>
+      <accerleration>0</accerleration>
+      <brakeDistance>5</brakeDistance>
+      <maxSpeed>0</maxSpeed>
+      <minSpeed>0</minSpeed>
+      <hiddenSelections />
+      <hiddenSelectionsTextures>[]</hiddenSelectionsTextures>
+      <armorStructural>1</armorStructural>
+      <armorFuel>0</armorFuel>
+      <armorGlass>0</armorGlass>
+      <armorLights>0.4</armorLights>
+      <armorWheels>0</armorWheels>
+      <armorHull>0</armorHull>
+      <armorTurret>0</armorTurret>
+      <armorGun>0</armorGun>
+      <armorEngine>0</armorEngine>
+      <armorTracks>0</armorTracks>
+      <armorHead>0</armorHead>
+      <armorHands>0</armorHands>
+      <armorLegs>0</armorLegs>
+      <armorAvionics>0</armorAvionics>
+      <armorVRotor>0</armorVRotor>
+      <armorHRotor>0</armorHRotor>
+      <armorMissiles>0</armorMissiles>
+      <modelSizes>[19.3106,21.6834,8.72087]</modelSizes>
+      <worldSizes>[18.2915,20.6644,8.72087]</worldSizes>
+      <radius>[14.5178,15.1585]</radius>
+      <boundingBox>[[-9.65529,-10.8417,-4.36044],[9.65529,10.8417,4.36044]]</boundingBox>
+      <parentClassHirachical>unkown</parentClassHirachical>
+      <logContainsErrors>true</logContainsErrors>
+      <log>
+        <loglines>
+          <string>Warning Message: Animation source DoorF not found in bin\config.bin/CfgVehicles/xcam_benzina_schnell/</string>
+          <string>Warning Message: Animation source Door2F not found in bin\config.bin/CfgVehicles/xcam_benzina_schnell/</string>
+        </loglines>
+      </log>
+      <createable>true</createable>
+    </ArmaObject>	
   </objList>
 </ArmaObjects>

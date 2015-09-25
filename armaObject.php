@@ -1,4 +1,7 @@
 <?php
+include_once 'armaLog.php';
+include_once 'armaParents.php';
+
 class ArmaObject {
 	
 	var $idx =  '';
