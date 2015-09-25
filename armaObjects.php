@@ -23,6 +23,12 @@ class ArmaObjects {
     
     var $type;
 	
+	public function __construct($data)
+	{
+		array_push($this->objects, new ArmaObject($data));
+	}
+	
+	/*
 	public function __construct($file)
 	{
 		$this->_file = $file;

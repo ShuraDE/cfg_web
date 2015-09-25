@@ -2,39 +2,55 @@
 include_once 'armaObjects.php';
 
 $debug = 5;
+$armaObjectList = array();
 
+$objClass = new ArmaObjectXML;
 //$aObjs = new ArmaObjects("obj.xml");
+
 $sax = xml_parser_create();
-xml_parser_set_option($sax, XML_OPTION_CASE_FOLDING, false);
-xml_parser_set_option($sax, XML_OPTION_SKIP_WHITE, true);
+xml_set_object($sax,$objClass);
 xml_set_element_handler($sax, 'sax_start', 'sax_end');
-xml_set_character_data_handler($sax, 'sax_cdata');
+xml_set_character_data_handler($sax, 'character_data');
+xml_parser_set_option($sax, XML_OPTION_CASE_FOLDING, false);
+//xml_parser_set_option($sax, XML_OPTION_SKIP_WHITE, true);
 xml_parse($sax, file_get_contents('obj.xml'), true);
 xml_parser_free($sax);
 
-function sax_start($sax, $tag, $attr) {
-  if ($tag == 'ArmaObject') {
-    echo '<br/>new object';
-  } elseif ($tag == 'parents') {
-    echo '<br/>parent';
-  } elseif ($tag == 'log') {
-    echo '<br/>log';
-  }
-}
-function sax_end($sax, $tag) {
-  if ($tag == 'ArmaObject') {
-    echo '<br/>';
-  } elseif ($tag == 'parents') {
-    echo '<br/>';
-  } elseif ($tag == 'log') {
-    echo '<br/>';
-  }
-}
-function sax_cdata($sax, $data) {
-  //echo htmlspecialchars($data);
-  echo $data;
-}   
 
+foreach($armaObjectList as $obj) {
+	echo $obj->className . "<br/>" . $obj->displayName . "<br/>";
+}
+
+
+class ArmaObjectXML {
+	var $tag;
+	var $item;
+
+	function sax_start($sax, $tag, $attr) {
+	  if ($tag == 'ArmaObject') { 
+		$this->item = new ArmaObject; 
+	  } elseif (!empty($this->item)) {
+		$this->tag = $tag;
+	  }
+	}
+	
+	function sax_end($sax, $tag) {
+	  if ($tag == 'ArmaObject') { 
+		global $armaObjectList;
+		$this->item->display();
+		array_push($armaObjectList, $this->item);
+		unset($this->item);
+	  }
+	}
+	
+	function character_data($sax, $data) {
+		if (!empty($this->item)) {
+		  if (isset($this->item->{$this->tag})) {
+			$this->item->{$this->tag} .= trim($data);
+		  }
+		}  
+	}   
+}
 //$xml = simplexml_load_file("obj.xml");
 
 /*

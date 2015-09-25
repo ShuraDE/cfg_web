@@ -1,84 +1,89 @@
 <?php
 class ArmaObject {
 	
-	private $idx;
-	private $className;
-	private $generalMacro;
-	private $vehicleClass;
-	private $displayName;
-	private $availableForSupportTypes;
-	private $weapons;
-	private $magazines;
-	private $textSingular;
-	private $filter;
-	private $side;
-	private $model;
-	private $parent;
-	private $ttl;
-	private $mod;
-	private $parents;
-	private $faction;
-	private $crew;
-	private $picture;
-	private $icon;
-	private $slingLoadCargoMemoryPoints;
-	private $crewCrashProtection;
-	private $crewExplosionProtection;
-	private $numberPhysicalWheels;
-	private $tracksSpeed;
-	private $CommanderOptics;
-	private $maxGForce;
-	private $fireResistance;
-	private $airCapacity;
-	private $tf_hasLRradio;
-	private $author;
-	private $cargoIsCoDriver;
-	private $transportSoldier;
-	private $transportVehicleCount;
-	private $transportAmmo;
-	private $transportFuel;
-	private $transportRepair;
-	private $maximumLoad;
-	private $transportMaxWeapons;
-	private $transportMaxMagazines;
-	private $transportMaxBackpacks;
-	private $fuelCapacity;
-	private $armor;
-	private $audible;
-	private $accuracy;
-	private $camouflage;
-	private $accerleration;
-	private $brakeDistance;
-	private $maxSpeed;
-	private $minSpeed;
-	private $hiddenSelections;
-	private $hiddenSelectionsTextures;
-	private $armorStructural;
-	private $armorFuel;
-	private $armorGlass;
-	private $armorLights;
-	private $armorWheels;
-	private $armorHull;
-	private $armorTurret;
-	private $armorGun;
-	private $armorEngine;
-	private $armorTracks;
-	private $armorHead;
-	private $armorHands;
-	private $armorLegs;
-	private $armorAvionics;
-	private $armorVRotor;
-	private $armorHRotor;
-	private $armorMissiles;
-	private $modelSizes;
-	private $worldSizes;
-	private $radius;
-	private $boundingBox;
-	private $parentClassHirachical;
-	private $logContainsErrors;
-	private $log;
-	private $createable;
+	var $idx =  '';
+	var $className =  '';
+	var $generalMacro =  '';
+	var $vehicleClass =  '';
+	var $displayName =  '';
+	var $availableForSupportTypes =  '';
+	var $weapons =  '';
+	var $magazines =  '';
+	var $textSingular =  '';
+	var $filter =  '';
+	var $side =  '';
+	var $model =  '';
+	var $parent =  '';
+	var $ttl =  '';
+	var $mod =  '';
+	var $parents =  '';
+	var $faction =  '';
+	var $crew =  '';
+	var $picture =  '';
+	var $icon =  '';
+	var $slingLoadCargoMemoryPoints =  '';
+	var $crewCrashProtection =  '';
+	var $crewExplosionProtection =  '';
+	var $numberPhysicalWheels =  '';
+	var $tracksSpeed =  '';
+	var $CommanderOptics =  '';
+	var $maxGForce =  '';
+	var $fireResistance =  '';
+	var $airCapacity =  '';
+	var $tf_hasLRradio =  '';
+	var $author =  '';
+	var $cargoIsCoDriver =  '';
+	var $transportSoldier =  '';
+	var $transportVehicleCount =  '';
+	var $transportAmmo =  '';
+	var $transportFuel =  '';
+	var $transportRepair =  '';
+	var $maximumLoad =  '';
+	var $transportMaxWeapons =  '';
+	var $transportMaxMagazines =  '';
+	var $transportMaxBackpacks =  '';
+	var $fuelCapacity =  '';
+	var $armor =  '';
+	var $audible =  '';
+	var $accuracy =  '';
+	var $camouflage =  '';
+	var $accerleration =  '';
+	var $brakeDistance =  '';
+	var $maxSpeed =  '';
+	var $minSpeed =  '';
+	var $hiddenSelections =  '';
+	var $hiddenSelectionsTextures =  '';
+	var $armorStructural =  '';
+	var $armorFuel =  '';
+	var $armorGlass =  '';
+	var $armorLights =  '';
+	var $armorWheels =  '';
+	var $armorHull =  '';
+	var $armorTurret =  '';
+	var $armorGun =  '';
+	var $armorEngine =  '';
+	var $armorTracks =  '';
+	var $armorHead =  '';
+	var $armorHands =  '';
+	var $armorLegs =  '';
+	var $armorAvionics =  '';
+	var $armorVRotor =  '';
+	var $armorHRotor =  '';
+	var $armorMissiles =  '';
+	var $modelSizes =  '';
+	var $worldSizes =  '';
+	var $radius =  '';
+	var $boundingBox =  '';
+	var $parentClassHirachical =  '';
+	var $logContainsErrors =  '';
+	var $log =  '';
+	var $createable =  '';
 	
+	function display() {
+		printf(htmlspecialchars($this->className));
+	}
+	
+	/*
 	function __construct($objData) {
 		foreach($objData as $key=>$value) {
 			switch ($key) {
@@ -324,8 +329,8 @@ class ArmaObject {
 					break;
 			}
 		}	
-		console('loading:' . $this->idx . ' - ' . $this->className, 1, $GLOBALS["debug"]);
-	}
+		//console('loading:' . $this->idx . ' - ' . $this->className, 1, $GLOBALS["debug"]);
+	}*/
 }
 
 ?>
