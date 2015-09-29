@@ -1,6 +1,4 @@
 <?php
-//include_once 'armaLog.php';
-//include_once 'armaParents.php';
 
 class ArmaObjectParent {
 	var $tier = '';
