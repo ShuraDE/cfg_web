@@ -1,6 +1,15 @@
 <?php
-include_once 'armaLog.php';
-include_once 'armaParents.php';
+//include_once 'armaLog.php';
+//include_once 'armaParents.php';
+
+class ArmaObjectParent {
+	var $tier = '';
+	var $entry = '';	
+}
+
+class ArmaObjectLog {
+	var $string =  '';
+}
 
 class ArmaObject {
 	
@@ -19,7 +28,7 @@ class ArmaObject {
 	var $parent =  '';
 	var $ttl =  '';
 	var $mod =  '';
-	var $parents =  '';
+	var $parents =  array();
 	var $faction =  '';
 	var $crew =  '';
 	var $picture =  '';
@@ -79,7 +88,7 @@ class ArmaObject {
 	var $boundingBox =  '';
 	var $parentClassHirachical =  '';
 	var $logContainsErrors =  '';
-	var $log =  '';
+	var $log =  array();
 	var $createable =  '';
 	
 	function display() {

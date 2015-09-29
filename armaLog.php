@@ -1,5 +1,5 @@
 <?php
 class ArmaObjectLog {
-	var $loglines =  array();
+	var $string =  '';
 }
 ?>
