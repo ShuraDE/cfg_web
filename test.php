@@ -1,12 +1,14 @@
 <?php
-include_once 'armaObjects.php';
+include_once 'armaObject.php';
+include_once 'config.php';
+
 ini_set('implicit_flush', true);
 
 $armaObjectList = array();
 $objClass = new ArmaObjectXML;
 $objectReadCounter = 0;
 
-$inputFileXML = "obj_more.xml"; //"obj.xml"; //
+$inputFileXML = $conf['cfg_data_dir']."obj_more.xml"; //"obj.xml"; //
 
 $fileOutput = fopen("output.txt", "w") or die("Unable to open file!");		//output file
 
@@ -42,7 +44,7 @@ foreach($armaObjectList as $obj) {
 		}
 		foreach($obj->parents as $val) {
 			echo "..#" . $val->tier . " " . $val->entry . "<br/>";
-		}		
+		}
 	}
 }
 */
@@ -53,11 +55,11 @@ class ArmaObjectXML {
 	var $item; 		//armaObject
 	var $itemSub; 	//ParentHiraObject
 	var $writeOut = 10;
-	
+
 	function sax_start($sax, $tag, $attr) {
 		switch ($tag) {
 			case 'ArmaObject':
-				$this->item = new ArmaObject; 
+				$this->item = new ArmaObject;
 				break;
 			case 'parents':
 				//create array for ParentHiraObject
@@ -77,7 +79,7 @@ class ArmaObjectXML {
 				break;
 		}
 	}
-	
+
 	function sax_end($sax, $tag) {
 		switch ($tag) {
 			//armaObject is done
@@ -86,10 +88,10 @@ class ArmaObjectXML {
 				global $objectReadCounter;
 				global $debug_outputImports;
 
-				
+
 				//raise import counter +1
 				$objectReadCounter++;
-				
+
 				//output import
 				if ($debug_outputImports) {
 					echo str_pad($objectReadCounter, 7, " ", STR_PAD_LEFT) . " " . $this->item->className . "<br/>";
@@ -112,9 +114,9 @@ class ArmaObjectXML {
 			case 'ParentHiraObject':
 				//do nothing
 				break;
-		}	  
+		}
 	}
-	
+
 	//handle attribute values
 	function character_data($sax, $data) {
 		if (!empty($this->item) && !empty(trim($data))) {
@@ -141,15 +143,15 @@ class ArmaObjectXML {
 					//nothing to, space for modifications
 				}
 			}
-		}  
+		}
 	}
-	
-	
+
+
 	//change to db merge, only for debug purpose
 	function writeOutData() {
-		global $fileOutput;	
+		global $fileOutput;
 		global $armaObjectList;
-		
+
 		foreach($armaObjectList as $obj) {
 			fwrite($fileOutput, str_pad($obj->idx, 7, " ", STR_PAD_LEFT) . " - " . $obj->className . " - " . $obj->parent . "\n");
 			if (!empty($obj->log)) {
@@ -158,9 +160,9 @@ class ArmaObjectXML {
 				}
 				foreach($obj->parents as $val) {
 					fwrite($fileOutput,"..#" . $val->tier . " " . $val->entry . "\n");
-				}		
+				}
 			}
-		}		
+		}
 	}
 }
 ?>
